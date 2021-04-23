@@ -1,0 +1,140 @@
+
+*{
+    margin : 0;
+    padding : 0;
+}
+html {
+    width : 100vw;
+    height : 100vh;
+}
+body{
+    margin : 0;
+    background: white;
+    background-image : url('man/jd-x-_uNZnkqeemY-unsplash.jpg');
+    background-repeat : no-repeat;
+    background-size : 100vw 100vh;
+}
+#hh{
+    width : 250px;
+    height : 250px;
+    border-radius : 300px;
+
+    /*hover*/
+    transition : 0.5s;
+}
+#logo{
+    width : 24px;
+    height : 24px;
+    opacity : 0;
+
+    /*hover*/
+    transition : 0.5s;
+}
+
+
+.container{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 40px;
+
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+.card{
+    width : 320px;
+    height : 500px;
+    background : rgb(97, 97, 97);
+    text-align: center;
+    border-radius: 30px;
+    position : relative;
+    overflow :hidden;
+
+    /*hover*/
+    transition : 0.5s;
+}
+.image{
+    position : absolute;
+    top : 40%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+
+    /*hover*/
+    transition : 0.5s;
+}
+
+.des{
+    padding : 0 40px;
+    position : absolute;
+    top :350px;
+    color : white;
+
+    /*hover*/
+    transition : 0.5s;
+}
+h2{
+    font-size : 30px;
+    font-weight : 600;
+    letter-spacing : 2px;
+    color : white;
+
+    /*hover*/
+    transition : 0.5s;
+}
+.text{
+    margin-top : 10px;
+    opacity : 0;
+
+    /*hover*/
+    transition : 0.5s;
+}
+.instaid{
+    display : flex;
+    justify-content : center;
+    gap : 10px;
+    padding : 7px 0;
+}
+.bt{
+    padding : 10px 20px;
+    border : 0px;
+    background: rgb(49, 49, 49);
+    border-radius : 20px;
+    color : white;
+    cursor : pointer;
+}
+span{
+    opacity : 0;
+}
+
+/* hover */
+
+.card:hover {
+    background-color : rgba(85, 85, 85, 0.861);
+    width : 320px;
+    height : 530px;
+
+}
+.card:hover h2{
+    color : white;
+}
+.card:hover #hh{
+    width : 180px;
+    height : 180px;
+}
+.card:hover .image{
+    transform : translate(-50%, -80%);
+}
+.card:hover .des{
+    top : 250px;
+}
+.card:hover .text{
+    opacity:1;
+}
+.card:hover #logo{
+    opacity : 1;
+}
+.card:hover span{
+    opacity : 1;
+}
